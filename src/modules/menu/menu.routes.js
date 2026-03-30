@@ -9,11 +9,11 @@ router.post("/", menuController.createMenu);
 // UPDATE MENU BY ID
 router.put("/:id", menuController.updateMenu);
 
-// GET MENU BY ID
-router.get("/:id", menuController.getMenuById);
-
 // GET ALL MENU PAGINATED
 router.get("/", menuController.getMenus);
+
+// GET MENU BY ID
+router.get("/:id", menuController.getMenuById);
 
 router.delete("/:id", menuController.deleteMenu);
 
